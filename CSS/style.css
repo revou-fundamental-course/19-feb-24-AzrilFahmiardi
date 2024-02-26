@@ -1,0 +1,170 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+header .navbar-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+
+  position: fixed;
+  background-color: rgba(34, 40, 49, 0.1);
+  z-index: 999;
+}
+
+header .navbar-container .logo img {
+  width: 40px;
+  height: 40px;
+  flex-grow: 1;
+}
+
+header .navbar-container .logo {
+  margin-right: 350px;
+}
+
+header .navbar-container .nav-list ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem 5rem;
+}
+
+header .navbar-container .nav-list li {
+  list-style-type: none;
+}
+
+header .navbar-container .nav-list a {
+  text-decoration: none;
+  padding: 1rem 1rem;
+  color: #222831;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+main .background-img {
+  width: 100%;
+  height: 900px;
+  background-image: url(../assets/pap-bor3.png);
+  background-size: cover;
+}
+
+.background-img .caption {
+  font-family: "montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 2rem;
+  color: #282a3a;
+  position: relative;
+  top: 250px;
+  left: 280px;
+}
+
+.background-img .caption .namaVisitor {
+  color: #bed754;
+  text-decoration: underline;
+  margin: 0;
+}
+
+.background-img .caption .slogan {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.background-img .caption .selengkapnya {
+  margin-left: 20px;
+}
+
+.background-img .caption .selengkapnya a {
+  font-size: 1rem;
+  font-weight: 400;
+  text-decoration: none;
+  color: #333a73;
+}
+
+main #company-info {
+  display: flex;
+  flex-direction: row;
+}
+
+main .headquarters {
+  height: 500px;
+  width: 100%;
+  background-color: #393e46;
+}
+
+main .headquarters p {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #eeeeee;
+  margin-left: 100px;
+  margin-top: 0;
+}
+
+main .headquarters .cabang-box {
+  display: flex;
+
+  flex-direction: row;
+  gap: 2rem;
+
+  padding: 10px;
+  justify-content: flex-start;
+
+  position: relative;
+  left: 100px;
+}
+
+main .headquarters .cabang-box .box {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background-color: aliceblue;
+  border-radius: 20%;
+}
+main .headquarters .cabang-box .jakarta {
+  background-image: url(../assets/jakarta.jpeg);
+  background-size: cover;
+}
+main .headquarters .cabang-box .batam {
+  background-image: url(../assets/batam.jpeg);
+  background-size: cover;
+}
+main .headquarters .cabang-box .jogja {
+  background-image: url(../assets/jogja.jpg);
+  background-size: cover;
+}
+
+main #message-us {
+  border: 1px solid black;
+  height: 600px;
+  background-image: url(../assets/paper2.jpeg);
+}
+
+main .output {
+  border: 1px solid black;
+  height: 400px;
+  width: 700px;
+  position: relative;
+  left: 55%;
+  top: 90px;
+  background-color: aliceblue;
+  border-radius: 40px;
+}
+
+footer p {
+  text-align: right;
+  margin-right: 50px;
+  color: #eeeeee;
+}
+
+footer {
+  background-color: #393e46;
+}
