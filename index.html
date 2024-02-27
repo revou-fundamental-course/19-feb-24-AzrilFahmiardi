@@ -52,7 +52,42 @@
         </div>
       </div>
       <div id="message-us">
-        <div class="output"></div>
+        <p id="message-us-title">Message Us</p>
+        <form name="message-form">
+          <table>
+            <tr>
+              <td><label for="input-nama">Nama </label></td>
+              <td>:</td>
+              <td><input type="text" name="fullname" id="input-nama" placeholder="masukan nama anda" size="20" /></td>
+            </tr>
+            <tr>
+              <td><label for="input-tanggal-lahir">Tanggal Lahir </label></td>
+              <td>:</td>
+              <td><input type="date" name="birth-date" id="input-tanggal-lahir" /></td>
+            </tr>
+            <tr>
+              <td><p>Jenis Kelamin</p></td>
+              <td></td>
+              <td>
+                <input type="radio" id="male" name="gender" value="male" />
+                <label for="male">Laki-laki</label>
+                <input type="radio" id="female" name="gender" value="female" />
+                <label for="male">Perempuan</label>
+              </td>
+            </tr>
+          </table>
+          <label for="pesan">Pesan :</label><br />
+          <textarea name="messages" id="pesan" cols="30" rows="10"></textarea><br />
+
+          <input type="submit" value="submit" id="submit" />
+        </form>
+
+        <div class="output">
+          <p><strong>Nama : </strong><span id="output-nama"></span></p>
+          <p><strong>Tanggal Lahir : </strong><span id="output-tanggal-lahir"></span></p>
+          <p><strong>Gender : </strong><span id="output-gender"></span></p>
+          <p><strong>Pesan : </strong><span id="output-pesan"></span></p>
+        </div>
       </div>
     </main>
     <footer><p>copyright</p></footer>

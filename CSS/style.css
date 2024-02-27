@@ -146,13 +146,25 @@ main #message-us {
   border: 1px solid black;
   height: 600px;
   background-image: url(../assets/paper2.jpeg);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+main #message-us-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #222831;
 }
 
 main .output {
   border: 1px solid black;
   height: 400px;
   width: 700px;
-  position: relative;
+  padding: 20px;
+
   left: 55%;
   top: 90px;
   background-color: aliceblue;
