@@ -3,26 +3,24 @@ function replaceName() {
   document.getElementById("visitor").innerHTML = visitor;
 }
 
-function setSenderUI(name, birthDate, gender, messages) {
+function setSenderUI(name, email, messages) {
   document.getElementById("output-nama").innerHTML = name;
-  document.getElementById("output-tanggal-lahir").innerHTML = birthDate;
-  document.getElementById("output-gender").innerHTML = gender;
+  document.getElementById("output-email").innerHTML = email;
   document.getElementById("output-pesan").innerHTML = messages;
 }
 
 function validateForm(event) {
   const name = document.forms["message-form"]["fullname"].value;
-  const birthDate = document.forms["message-form"]["birth-date"].value;
-  const gender = document.forms["message-form"]["gender"].value;
+  const email = document.forms["message-form"]["email"].value;
   const messages = document.forms["message-form"]["messages"].value;
 
-  if (name == "" || birthDate == "" || gender == "" || messages == "") {
+  if (name == "" || email == "" || messages == "") {
     alert("Data tidak boleh kosong");
     event.preventDefault();
+  } else {
+    setSenderUI(name, email, messages);
+    event.preventDefault();
   }
-
-  setSenderUI(name, birthDate, gender, messages);
-  event.preventDefault();
 }
 
 let submit = document.getElementById("submit");

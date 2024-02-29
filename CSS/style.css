@@ -215,6 +215,16 @@ main .output {
   border-radius: 40px;
 }
 
+#submit {
+  width: 230px;
+  background-color: #58d754;
+  padding: 5px 10px;
+  border: 1px solid #222831;
+  border-radius: 20px;
+  font-family: "Quicksand";
+  font-weight: 800;
+}
+
 footer p {
   text-align: right;
   margin-right: 50px;
